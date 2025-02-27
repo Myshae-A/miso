@@ -41,6 +41,8 @@ app.get("/users", async (req, res) => {
     }
 });
 
+export default app;
+
 // GET: Endpoint to retrieve all tasks
 
 // CREATE
