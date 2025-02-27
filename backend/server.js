@@ -16,7 +16,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json()); // must keep this...
 
-
+console.log("hello world, testing");
 // enable CORS for specific routes or origins ??
 app.use(cors({
   origin: 'https://miso-eight.vercel.app/' // Allow only this origin
