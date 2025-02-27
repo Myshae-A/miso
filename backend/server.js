@@ -25,6 +25,10 @@ app.use(cors({
 // Your API routes will go here...
 app.use(express.json())
 
+app.get("/", (req, res) => {
+  res.send("Hello from Miso-Eight!"); // Or any response you want
+});
+
 app.get("/users", async (req, res) => {
     try {
         const usersSnapshot = await db.collection("users").get();
