@@ -6,6 +6,7 @@ import theme from "./Theme"; // Custom theme settings
 
 import LoginPage from "./components/LoginPage"; // Component for the login page
 import AccountPage from "./components/AccountPage"; // Component for the account page
+import DefaultPage from "./components/DefaultPage"; // Component for the default page
 
 // The main App component
 function App() {
@@ -25,7 +26,7 @@ function App() {
             {/* The path prop determines the URL path, and the element prop determines which component to show. */}
             {/* makes the default page automatically re-route to the login page
                 (instead of creating an entirely separate DefaultPage to hold as a placeholder)*/}
-            <Route path="/" element={<Navigate to="/login" replace />} />
+            <Route path="/" element={<DefaultPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/account" element={<AccountPage />} />
             {/* These are more potential pages that we're hoping to create:
